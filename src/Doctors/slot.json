@@ -1,0 +1,40 @@
+{
+  "slot": [
+    {
+      "name": "Dr. Vivian Monore",
+      "image": "/icons/9a550bd872945d455420da142f0642e7.jpeg",
+      "tokenId": "089",
+      "time": "10 - 11 AM",
+      "status": "Pending"
+    },
+    {
+      "name": "Dr. Usmaan",
+      "image": "/icons/3fd7ff69ba2bc50cfa0b979f76d92fbb.jpeg",
+      "tokenId": "089",
+      "time": "10 - 10:30 AM",
+      "status": "Complete"
+    },
+    {
+      "name": "Dr. Shane Warn",
+      "image": "/icons/9fdbc4863a2843121b1dedaf4518246e.jpeg",
+      "tokenId": "089",
+      "time": "1 - 2 PM",
+      "status": "On Going"
+    },
+    {
+      "name": "Dr. Wang Doe",
+      "image": "/icons/3e8a876397d14126e66850b7c34eec49.jpeg",
+      "tokenId": "089",
+      "time": "10 - 11 AM",
+      "status": "Complete"
+    },
+    {
+        "name": "Dr. Ragini",
+      "image": "/icons/9fdbc4863a2843121b1dedaf4518246e.jpeg",
+      "tokenId": "089",
+      "time": "3 - 6 PM",
+      "status": "Pending"
+    }
+   
+  ]
+}
