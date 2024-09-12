@@ -1,0 +1,34 @@
+{
+    "category": [
+      {
+        "name": "Gastroentrologist (GI)",
+        "image":"/icons/Group 88.png"
+      },
+      {
+        "name": "Dentist",
+        "image":"/icons/Vector.png"
+      },
+      {
+        "name": "Cardiologist",
+        "image":"/icons/Vector (1).png"
+      },
+      {
+        "name": "Pediatrician",
+        "image":"/icons/hugeicons_baby-02 (1).png"
+      },
+      {
+        "name": "Orthopedics",
+        "image":"/icons/orthopaedics.png"
+      },
+      {
+        "name": "Neurologist",
+        "image":"/icons/Vector brani.png"
+      },
+      {
+        "name": "ENT Specialist",
+        "image":"/icons/ph_eye-light.png"
+      }
+    ]
+  }
+  
+  
