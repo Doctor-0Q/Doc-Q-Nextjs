@@ -1,6 +1,0 @@
-{
-  "/(root)/page": "app/(root)/page.js",
-  "/(root)/find-doctors/page": "app/(root)/find-doctors/page.js",
-  "/(root)/find-doctors/[doctorId]/page": "app/(root)/find-doctors/[doctorId]/page.js",
-  "/(root)/our-services/page": "app/(root)/our-services/page.js"
-}
