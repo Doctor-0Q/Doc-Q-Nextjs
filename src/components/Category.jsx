@@ -1,13 +1,67 @@
 "use client"
-
+import API_URL from "@/config";
+import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 import data from "../Doctors/category.json"
 import Image from "next/image";
 import CategoryData from "./CategoryData";
+import { useEffect } from "react";
 
 const Category = () => {
   const [category,setCategory]  =  useState("");
+  const router = useRouter();
+  const [search, setSearch] = useState("");
+  const [doctors, setDoctors] = useState([]);
+  // const [location, setLocation] = useState("");
   
+  const getDoctorNames = async () => {
+    const response = await fetch(`${API_URL}/api/search/doctors`);
+    const data = await response.json();
+    console.log(data);
+    data.sort((a, b) => a.name.localeCompare(b.name));
+    setDoctors(data);  
+  }
+
+  useEffect(() => {
+    getDoctorNames();
+  }, []);
+
+  const handleDoctorSearch = (e) => {
+    if (e.key !== 'Enter') {
+      return;
+    }
+    e.preventDefault();
+
+    const doctorId = e.target.value;
+    router.push(`/doctors-profile/${doctorId}`);
+  }
+
+  const handleSearch = async (e) => {
+    
+    if (e.key !== 'Enter') {
+      return;
+    }
+    e.preventDefault();
+    console.log(search);
+    return;
+
+    // if (navigator.geolocation) {
+    //   navigator.geolocation.getCurrentPosition(showLocations, error);
+    // } else {
+    //   toast.warn("Location is not supported by this browser.");
+    //   return;
+    // }
+
+    async function showLocations(location) {
+      await showLocation(location, search, navigate);
+    }
+
+    function error(e) {
+      toast.warn("User denied the request for Location");
+      return;
+    }
+  }
+
   return (
     <>
       <div className="min-h-[50vh] flex justify-center items-center flex-col pb-3">
@@ -15,8 +69,20 @@ const Category = () => {
           <input
             type="text"
             placeholder="Find Your Doctor ..."
-            className="max-[430px]:w-[80%] bg-white  h-[55px] w-[653px] rounded-3xl border-solid border-3 drop-shadow-2xl border-2 shadow-xl border-zinc-500 outline-none pl-3"
+            className="max-[430px]:w-[80%] bg-white  h-[55px] w-[653px] rounded-3xl border-solid border-3 drop-shadow-2xl 
+            border-2 shadow-xl border-zinc-500 outline-none pl-3"
           />
+           <select
+            className="inputCommonDoctorClass"
+            id="serchNearDoctor"
+            placeholder="Search for nearby doctor"
+            onKeyDown={handleDoctorSearch}
+          >
+            <option value="">Select Doctor</option>
+            {doctors.map(doctor => (
+              <option key={doctor.id} value={doctor.id}>{doctor.name}</option>
+            ))}
+          </select>
           <input
             type="text"
             placeholder="Location "
