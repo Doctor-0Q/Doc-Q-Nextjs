@@ -40,7 +40,7 @@ const Header = () => {
             <button
               className="w-[200px] mr-4 h-[50px] font-bold bg-gradient-to-r from-[#00D7CF] to-[#53A7FF] text-white text-[18px] rounded-3xl"
             >
-             <Link href="/Logout">Log in </Link><span className="p-[5px]"> /</span> <Link href="/">Register</Link>
+             <Link href="">Log in </Link><span className="p-[5px]"> /</span> <Link href="/">Register</Link>
             </button>
           </div>
           <div className="min-[1118px]:hidden relative top-[35px] mr-5">

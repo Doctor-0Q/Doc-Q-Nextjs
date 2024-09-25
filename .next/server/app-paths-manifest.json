@@ -1,6 +1,4 @@
 {
-  "/(root)/page": "app/(root)/page.js",
-  "/(root)/find-doctors/page": "app/(root)/find-doctors/page.js",
-  "/(root)/find-doctors/[doctorId]/page": "app/(root)/find-doctors/[doctorId]/page.js",
-  "/(root)/our-services/page": "app/(root)/our-services/page.js"
+  "/(auth)/(with-auth-layout)/doctor/page": "app/(auth)/(with-auth-layout)/doctor/page.js",
+  "/(root)/(authenticated)/doctor/signup/page": "app/(root)/(authenticated)/doctor/signup/page.js"
 }

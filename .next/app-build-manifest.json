@@ -1,31 +1,33 @@
 {
   "pages": {
-    "/(root)/page": [
+    "/(auth)/(with-auth-layout)/doctor/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(root)/page.js"
+      "static/css/app/(auth)/(with-auth-layout)/doctor/page.css",
+      "static/chunks/app/(auth)/(with-auth-layout)/doctor/page.js"
+    ],
+    "/(auth)/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(auth)/layout.css",
+      "static/chunks/app/(auth)/layout.js"
+    ],
+    "/(root)/(authenticated)/doctor/signup/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(root)/(authenticated)/doctor/signup/page.css",
+      "static/chunks/app/(root)/(authenticated)/doctor/signup/page.js"
+    ],
+    "/(root)/(authenticated)/doctor/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(root)/(authenticated)/doctor/layout.js"
     ],
     "/(root)/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/(root)/layout.css",
       "static/chunks/app/(root)/layout.js"
-    ],
-    "/(root)/find-doctors/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(root)/find-doctors/page.js"
-    ],
-    "/(root)/find-doctors/[doctorId]/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(root)/find-doctors/[doctorId]/page.js"
-    ],
-    "/(root)/our-services/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/(root)/our-services/page.css",
-      "static/chunks/app/(root)/our-services/page.js"
     ]
   }
 }
