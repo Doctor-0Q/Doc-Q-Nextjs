@@ -1,4 +1,0 @@
-{
-  "/(auth)/(with-auth-layout)/doctor/page": "app/(auth)/(with-auth-layout)/doctor/page.js",
-  "/(root)/(authenticated)/doctor/signup/page": "app/(root)/(authenticated)/doctor/signup/page.js"
-}
